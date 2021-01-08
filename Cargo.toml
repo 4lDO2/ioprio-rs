@@ -1,6 +1,6 @@
 [package]
 name = "ioprio"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["4lDO2 <4lDO2@protonmail.com>"]
 edition = "2018"
 license = "MIT"
@@ -12,7 +12,7 @@ categories = ["api-bindings", "os::linux-apis"]
 readme = "README.md"
 exclude = ["target"]
 
-[package.metadata.docs-rs]
+[package.metadata.docs.rs]
 features = ["docs"]
 rustdoc-args = ["--cfg", "feature=\"docs\""]
 
