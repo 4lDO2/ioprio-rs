@@ -6,6 +6,17 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[package.metadata.docs-rs]
+features = ["docs"]
+rustdoc-args = ["--cfg", "feature=\"docs\""]
+
+[features]
+default = []
+docs = ["iou"]
+iou = ["iou_"]
+
 [dependencies]
 nix = "0.19"
 libc = "0.2"
+
+iou_ = { package = "iou", version = "0.3", optional = true }
