@@ -3,8 +3,14 @@ name = "ioprio"
 version = "0.1.0"
 authors = ["4lDO2 <4lDO2@protonmail.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+repository = "https://github.com/4lDO2/ioprio-rs"
+documentation = "https://docs.rs/ioprio"
+description = "A Linux-only crate for managing I/O priorities"
+keywords = ["io", "scheduling", "linux", "io_uring", "syscall"]
+categories = ["api-bindings", "os::linux-apis"]
+readme = "README.md"
+exclude = ["target"]
 
 [package.metadata.docs-rs]
 features = ["docs"]
