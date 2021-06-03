@@ -17,7 +17,7 @@ use std::cmp::Ordering;
 use std::convert::TryInto;
 
 use nix::errno::Errno;
-use nix::unistd::{Pid, Uid};
+pub use nix::unistd::{Pid, Uid};
 
 /// An I/O priority, either associated with a class and per-class data, or the standard priority.
 #[derive(Clone, Copy, Debug, Eq, Hash, PartialEq)]
